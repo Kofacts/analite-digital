@@ -39,6 +39,8 @@ body
   font-family: 'Graphik-Regular' !important;
   background:black !important;
   color: white !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
 }
   .btn
   {
