@@ -80,7 +80,7 @@
                     <br>
                     <div class="row">
                         <div class="col-sm-12 col-lg-3">
-                            <button class="btn">Let's Do This.</button>
+                            <button class="btn"  @click="sendMail">Let's Do This.</button>
                         </div>
                     </div>
                 </div>
@@ -99,10 +99,48 @@
 <script>
 import ContactSvg from '@/components/ContactSvg.vue'
 import Footer from '@/components/Layout/Footer.vue'
+import axios from 'axios'
 // @ is an alias to /src
 export default {
   name: 'Contact Us',
-  components: {ContactSvg,Footer}
+  components: {ContactSvg,Footer},
+  data() {
+    return {
+          request_data : {"personalizations": [
+            {
+              "to": [
+                {
+                  "email": "mp3horseofficial@gmail.com"
+                }
+              ],
+              "subject": "Hello, World!"
+            }
+          ],
+          "from": {
+            "email": "from_address@example.com"
+          },
+          "content": [
+            {
+              "type": "text/plain",
+              "value": "Hello, World!"
+            }
+          ],
+        },
+        api: 'https://api.sendgrid.com/v3/mail/send'
+    }
+  },
+  methods: {
+    sendMail(){
+        console.log('Sending Mail ..')
+        axios.post(this.api,this.request_data)
+        .then((response) => {
+            console.log(response)
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+    }
+  }
 }
 </script>
 
