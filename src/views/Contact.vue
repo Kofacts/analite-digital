@@ -138,7 +138,28 @@ export default {
   methods: {
     sendMail(){
         console.log('Sending Mail ..')
-        axios.post(this.api,this.request_data,{ headers: {"Authorization" : `Bearer ${this.tokenStr}`} })
+        var data = {
+            "personalizations": [
+            {
+              "to": [
+                {
+                  "email": "mp3horseofficial@gmail.com"
+                }
+              ],
+              "subject": "Analite Digital Contact Form"
+            }
+          ],
+          "from": {
+            "email": this.email
+          },
+          "content": [
+            {
+              "type": "text/plain",
+              "value": `Hello Analite, My name is ${name} and i run ${company}. I am looking to work with you guys on ${desc}. You can reach out to me via ${phone}`
+            }
+          ],
+        }
+        axios.post(this.api,data,{ headers: {"Authorization" : `Bearer ${this.tokenStr}`} })
         .then((response) => {
             console.log(response)
         })
