@@ -106,33 +106,13 @@ export default {
   components: {ContactSvg,Footer},
   data() {
     return {
-          name,
-          desc,
-          company,
-          email,
-          phone,
-          request_data : {"personalizations": [
-            {
-              "to": [
-                {
-                  "email": "mp3horseofficial@gmail.com"
-                }
-              ],
-              "subject": "Analite Digital Contact Form"
-            }
-          ],
-          "from": {
-            "email": this.email
-          },
-          "content": [
-            {
-              "type": "text/plain",
-              "value": `Hello Analite, My name is ${name} and i run ${company}. I am looking to work with you guys on ${desc}. You can reach out to me via ${phone}`
-            }
-          ],
-        },
-        api: 'https://api.sendgrid.com/v3/mail/send',
-        tokenStr: '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'
+      name,
+      desc,
+      company,
+      email,
+      phone,
+      api: 'https://api.sendgrid.com/v3/mail/send',
+      tokenStr: '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'
     }
   },
   methods: {
@@ -155,7 +135,7 @@ export default {
           "content": [
             {
               "type": "text/plain",
-              "value": `Hello Analite, My name is ${name} and i run ${company}. I am looking to work with you guys on ${desc}. You can reach out to me via ${phone}`
+              "value": `Hello Analite, My name is ${this.name} and i run ${this.company}. I am looking to work with you guys on ${this.desc}. You can reach out to me via ${this.phone}`
             }
           ],
         }
