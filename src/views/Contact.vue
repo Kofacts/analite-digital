@@ -126,13 +126,14 @@ export default {
             }
           ],
         },
-        api: 'https://api.sendgrid.com/v3/mail/send'
+        api: 'https://api.sendgrid.com/v3/mail/send',
+        tokenStr: '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'
     }
   },
   methods: {
     sendMail(){
         console.log('Sending Mail ..')
-        axios.post(this.api,this.request_data)
+        axios.post(this.api,this.request_data,{ headers: {"Authorization" : `Bearer ${this.tokenStr}`} })
         .then((response) => {
             console.log(response)
         })
