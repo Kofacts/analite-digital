@@ -44,13 +44,13 @@
                             <label for="name">
                                 <small>Full Name</small>
                             </label><br>
-                            <input type="text" id="name" name="">
+                            <input type="text" v-model="name" id="name" name="">
                         </div>
                         <div class="col-sm-12 col-lg-3 float-left">
                             <label for="name">
                                 <small>Email Addres</small>
                             </label><br>
-                            <input type="email" id="name" name="">
+                            <input type="email" v-model="email" id="name" name="">
                         </div>
                     </div>
                     <br>
@@ -59,13 +59,13 @@
                             <label for="name">
                                 <small>Phone Number</small>
                             </label><br>
-                            <input type="text" id="name" name="">
+                            <input type="text" v-model="phone" id="name" name="">
                         </div>
                         <div class="col-sm-12 col-lg-3 float-left">
                             <label for="name">
                                 <small>Company</small>
                             </label><br>
-                            <input type="email" id="name" name="">
+                            <input type="email" v-model="company" id="name" name="">
                         </div>
                     </div>
                     <br>
@@ -74,7 +74,7 @@
                             <label for="name">
                                 <small>Project Description</small>
                             </label><br>
-                            <textarea type="text" id="name" name=""></textarea>
+                            <textarea type="text" id="name" v-model="desc" name=""></textarea>
                         </div>
                     </div>
                     <br>
@@ -106,6 +106,11 @@ export default {
   components: {ContactSvg,Footer},
   data() {
     return {
+          name,
+          desc,
+          company,
+          email,
+          phone,
           request_data : {"personalizations": [
             {
               "to": [
@@ -113,16 +118,16 @@ export default {
                   "email": "mp3horseofficial@gmail.com"
                 }
               ],
-              "subject": "Hello, World!"
+              "subject": "Analite Digital Contact Form"
             }
           ],
           "from": {
-            "email": "from_address@example.com"
+            "email": this.email
           },
           "content": [
             {
               "type": "text/plain",
-              "value": "Hello, World!"
+              "value": `Hello Analite, My name is ${name} and i run ${company}. I am looking to work with you guys on ${desc}. You can reach out to me via ${phone}`
             }
           ],
         },
