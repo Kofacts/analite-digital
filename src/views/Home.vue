@@ -11,7 +11,7 @@
     				We build Transformative software applications for the ambitious enterprise, designed for purpose and scale.
     			</span>
     			<br><br>
-    			<router-link :to="works"><button class="btn hvr-sweep-to-right">See Our Works <i class="zmdi zmdi-long-arrow-right"></i></button></router-link>
+    			<button class="btn hvr-sweep-to-right">See Our Works <i class="zmdi zmdi-long-arrow-right"></i></button>
     		</div>
     	</div>
 
