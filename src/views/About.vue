@@ -10,12 +10,7 @@
 
     		<div class="generic-subheader">
     			<span id="generic-subheader">
-    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Our core expertises focus on branding and digital with a vast use of data, and also the intersection where they meet. We analyze client’s problem and do numerous brainstorming session, so that we can deliver powerful and meaningful solutions.
     			</span>
     			<br><br>
     			<h4>Our Thought Process ?</h4>
@@ -113,7 +108,7 @@
     		<br>
     		<h4 id="generic-subheader">
     			Let's build something awesome together!<br>
-				Say hello@analitedigital.site or call +07089605331
+				Say <a style="color:white; text-decoration:none" href="mailto:analitedigital@gmail.com">analitedigital@gmail.com</a> or call <a style="color:white; text-decoration:none" href="tel:+2347089605331">+2347089605331</a>
     		</h4>
     		<br>
     		<router-link to="/contact" href="#"><button class="btn btn-start hvr-sweep-to-right">Start Project</button></router-link>

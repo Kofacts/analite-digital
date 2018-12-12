@@ -44,13 +44,13 @@
                             <label for="name">
                                 <small>Full Name</small>
                             </label><br>
-                            <input type="text" v-model="name" id="name" name="">
+                            <input type="text" v-model="name" id="name" >
                         </div>
                         <div class="col-sm-12 col-lg-3 float-left">
                             <label for="name">
                                 <small>Email Addres</small>
                             </label><br>
-                            <input type="email" v-model="email" id="name" name="">
+                            <input type="email" v-model="email" id="name" >
                         </div>
                     </div>
                     <br>
@@ -59,13 +59,13 @@
                             <label for="name">
                                 <small>Phone Number</small>
                             </label><br>
-                            <input type="text" v-model="phone" id="name" name="">
+                            <input type="text" v-model="phone" id="name" >
                         </div>
                         <div class="col-sm-12 col-lg-3 float-left">
                             <label for="name">
                                 <small>Company</small>
                             </label><br>
-                            <input type="email" v-model="company" id="name" name="">
+                            <input type="email" v-model="company" id="name" >
                         </div>
                     </div>
                     <br>
@@ -74,7 +74,7 @@
                             <label for="name">
                                 <small>Project Description</small>
                             </label><br>
-                            <textarea type="text" id="name" v-model="desc" name=""></textarea>
+                            <textarea type="text" id="name" v-model="desc" ></textarea>
                         </div>
                     </div>
                     <br>
@@ -106,47 +106,38 @@ export default {
   components: {ContactSvg,Footer},
   data() {
     return {
-      name,
-      desc,
-      company,
-      email,
-      phone,
+      name: '',
+      desc: '',
+      company:'',
+      email: '',
+      phone: '',
       api: 'https://api.sendgrid.com/v3/mail/send',
       tokenStr: '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'
     }
   },
   methods: {
     sendMail(){
-        console.log('Sending Mail ..')
-        var data = {
-            "personalizations": [
-            {
-              "to": [
-                {
-                  "email": "mp3horseofficial@gmail.com"
-                }
-              ],
-              "subject": "Analite Digital Contact Form"
-            }
-          ],
-          "from": {
-            "email": this.email
-          },
-          "content": [
-            {
-              "type": "text/plain",
-              "value": `Hello Analite, My name is ${this.name} and i run ${this.company}. I am looking to work with you guys on ${this.desc}. You can reach out to me via ${this.phone}`
-            }
-          ],
-        }
-        axios.post(this.api,data,{ headers: {"Authorization" : `Bearer ${this.tokenStr}`} })
-        .then((response) => {
-            console.log(response)
-        })
-        .catch((err) => {
-            console.log(err)
-        })
+        var service_id = 'sendgrid';
+        var template_id = 'template_zIp04lTo';
+        var template_params = {
+            from_name: this.name,
+            reply_email: this.email,
+            message_html: this.desc,
+            to_name: 'Analite Digital'
+        };
+
+        emailjs.send(service_id,template_id,template_params)
+            .then((response) => {
+                console.log(response)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+        //toastr.success('Have fun storming the castle!', 'Miracle Max Says')
     }
+  },
+  mounted() {
+      this.sendMail()
   }
 }
 </script>
