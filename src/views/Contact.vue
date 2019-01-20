@@ -122,7 +122,7 @@ export default {
         var template_params = {
             from_name: this.name,
             reply_email: this.email,
-            message_html: this.desc + this.phone + this.company,
+            message_html: this.desc,
             to_name: 'Analite Digital'
         };
 
