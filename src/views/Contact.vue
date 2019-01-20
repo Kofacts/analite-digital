@@ -123,6 +123,8 @@ export default {
             from_name: this.name,
             reply_email: this.email,
             message_html: this.desc,
+            phone_number: this.phone,
+            company_name: this.company,
             to_name: 'Analite Digital'
         };
 
