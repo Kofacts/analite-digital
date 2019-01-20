@@ -145,7 +145,10 @@ export default {
           );
         })
         .catch(error => {
-          console.log(error);
+          toastr.error(
+            "Could Not send that message",
+            "Dang!"
+          );
         });
       //toastr.success('Have fun storming the castle!', 'Miracle Max Says')
     }
