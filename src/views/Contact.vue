@@ -137,14 +137,14 @@ export default {
 
       emailjs
         .send(service_id, template_id, template_params)
-        .then(response => {
-          console.log(response);
+        .then((response) => {
+          //console.log(response);
           toastr.success(
             "Your Email has successfully sent, We would get back to your shortly",
             "Successsss!"
           );
         })
-        .catch(error => {
+        .catch((error) => {
           toastr.error(
             "Could Not send that message",
             "Dang!"
