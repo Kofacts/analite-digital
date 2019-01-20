@@ -154,7 +154,7 @@ export default {
     }
   },
   mounted() {
-    this.sendMail();
+    //this.sendMail();
   }
 };
 </script>
