@@ -2,15 +2,21 @@
   <div class="hello">
     <div class="footer">
       <small></small>
-      <button class="social">
+      <a href="https://facebook.com/analitedigital">
+        <button class="social">
         <i class="zmdi zmdi-facebook"></i>
-      </button>
+        </button>
+      </a>
+      <a href="https://twitter.com/analite_digital">
       <button class="social">
         <i class="zmdi zmdi-twitter"></i>
       </button>
+      </a>
+      <a href="https://instagram.com/analitedigital">
       <button class="social">
         <i class="zmdi zmdi-instagram"></i>
       </button>
+      </a>
       <br>
       <small>&copy Analite Digital - 2018</small>
     </div>
