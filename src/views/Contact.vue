@@ -10,9 +10,9 @@
 
         <div class="generic-subheader">
           <span id="generic-subheader">
-            Looking to get us hop' on that next big thing, or just want to grab a cup of coffee with us?
-            We are always ready for that.
-            <br>We’d love to have you at the office anytime between 10 am and 4 pm, as long as you have an appointment. Fridays, weekends and holidays are excluded.
+            Looking to build the next big thing? Or you want to reimagine your product experience? We are always excited to have word with potential clients not minding downing a cup or two of coffee.
+            <br>
+            We'd love to have you at the office any time between 10am and 4pm whether you have an appointment or not with us.
           </span>
           <br>
           <br>
@@ -35,7 +35,7 @@
     <div class="row b-enqu">
       <div class="col-sm-12">
         <h4>Business Inquiries ?</h4>
-        <h6>Fill out this form and we would reach out ASAP!</h6>
+        <h6>Do you have any questions? Fill out the below form and we would reach out ASAP. :)</h6>
       </div>
       <div class="col-sm-12 form-sec">
         <div class="row">

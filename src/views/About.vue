@@ -10,12 +10,15 @@
 
     		<div class="generic-subheader">
     			<span id="generic-subheader">
-    				Our core expertises focus on branding and digital with a vast use of data, and also the intersection where they meet. We analyze client’s problem and do numerous brainstorming session, so that we can deliver powerful and meaningful solutions.
-    			</span>
+    				Ever wondered what it takes to come up with an exciting product? Ever wondered how the ideation and iteration process moves over time? Wonder no more as we are a creative agency that works hand in hand with our clients towards producing awesomeness that almost always beats our imagination and that of our clients.
+					<p>
+						Our core expertise lie in branding and digital storytelling through amazing experience design. We utilize actionable data to glean insights on clients' problems; engaging in numerous brainstorming sessions with our clients and their customers so as to identify their needs and deliver beyond measure.
+					</p>
+				</span>
     			<br><br>
     			<h4>Our Thought Process ?</h4>
     			<span id="generic-subheader">
-    				A cast of highly motivated Engineers, Data Scientists, Designers, Strategists and Thinkers with a common flair for innovation and excellence. Intelia vets talent using one of the most stringent assessment methodologies in the industry to ensure that our promise of exceeding satisfaction is kept
+    				We are a small design team with a drive to distinguish ourselves in any project we engage in. We empathise with our clients at the deepest of levels so as to reimagine the possibilities lying in their ideas and experiences. With a team that's trained across multiple disciplines, we mate ideas together drawing parallels from different industries and domains as well as our experience and skillset. We live to see the smile on the faces of our clients as we bring them joy untold. 😊
     			</span>
     		</div>
     	</div>
@@ -52,6 +55,7 @@
     	<div class="col-sm-12">
     		<br><br>
     		<h4>Our Services include:</h4>
+			<span>The UI has to be redesigned to pass an even more exciting message. </span>
     		<br><br>
     		<div class="row">
     			<div class="col-sm-12 col-lg-4 s-card">
@@ -108,7 +112,7 @@
     		<br>
     		<h4 id="generic-subheader">
     			Let's build something awesome together!<br>
-				Say <a style="color:white; text-decoration:none" href="mailto:analitedigital@gmail.com">analitedigital@gmail.com</a> or call <a style="color:white; text-decoration:none" href="tel:+2347089605331">+2347089605331</a>
+				Say <a style="color:white; text-decoration:none" href="mailto:analitedigital@gmail.com">analitedigital@gmail.com</a> or call <a style="color:white; text-decoration:none" href="tel:+2347089605331">07089605331 </a> or <a style="color:white; text-decoration:none" href="tel:09034017159">09034017159</a>
     		</h4>
     		<br>
     		<router-link to="/contact" href="#"><button class="btn btn-start hvr-sweep-to-right">Start Project</button></router-link>
