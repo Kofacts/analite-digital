@@ -48,6 +48,18 @@
 			<div class="col-sm-6 col-lg-3">
 				<img src="@/assets/clients/callerbox.png" id="client-logo">
 			</div>
+
+			<div class="col-sm-6 col-lg-3">
+				<img src="@/assets/clients/pfactory.svg" id="client-logo">
+			</div>
+			
+			<div class="col-sm-6 col-lg-3">
+				<img src="@/assets/clients/logo.png" id="client-logo">
+			</div>
+
+			<div class="col-sm-6 col-lg-3">
+				<img src="@/assets/clients/logo_pod.png" id="client-logo">
+			</div>
 			</div>
 		</div>
 	</div>
