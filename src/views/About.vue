@@ -33,31 +33,31 @@
 		<h4>Companies We've Worked with:</h4>
 		<br><br>
 		<div class="row container">
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6 mt-2 col-lg-3">
 				<img src="@/assets/clients/tp.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6 mt-2 col-lg-3">
 				<img src="@/assets/clients/msme.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6  mt-3col-lg-3">
 				<img src="@/assets/clients/mine.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6 mt-3 col-lg-3">
 				<img src="@/assets/clients/callerbox.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6 mt-3 col-lg-3">
 				<img src="@/assets/clients/pfactory.svg" id="client-logo">
 			</div>
 			
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6 mt-3 col-lg-3">
 				<img src="@/assets/clients/logo.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6 col-lg-3">
+			<div class="col-sm-6  mt-3 col-lg-3">
 				<img src="@/assets/clients/logo_pod.png" id="client-logo">
 			</div>
 			</div>
