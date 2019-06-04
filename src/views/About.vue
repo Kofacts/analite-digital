@@ -41,7 +41,7 @@
 				<img src="@/assets/clients/msme.png" id="client-logo">
 			</div>
 
-			<div class="col-sm-6  mt-3col-lg-3">
+			<div class="col-sm-6  mt-3 col-lg-3">
 				<img src="@/assets/clients/mine.png" id="client-logo">
 			</div>
 
